@@ -18,6 +18,10 @@ AS_IF([test "$CARGO" != "yes" -o "$RUSTC" != "yes"], [
   AC_MSG_FAILURE("Rust based plugins cannot be built $CARGO $RUSTC")
 ])
 
+LT_INIT
+
+AC_CONFIG_MACRO_DIRS([m4])
+
 AC_CONFIG_FILES([
   Makefile
 ])
